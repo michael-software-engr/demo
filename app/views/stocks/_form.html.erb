@@ -1,0 +1,122 @@
+<%= form_with(model: stock, local: true) do |form| %>
+  <% if stock.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stock.errors.count, "error") %> prohibited this stock from being saved:</h2>
+
+      <ul>
+      <% stock.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trading_day_id %>
+    <%= form.text_field :trading_day_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :symbol %>
+    <%= form.text_field :symbol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_name %>
+    <%= form.text_field :company_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.time_select :time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :conference_call %>
+    <%= form.datetime_select :conference_call %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previous_move %>
+    <%= form.text_field :previous_move %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expected_move %>
+    <%= form.text_field :expected_move %>
+  </div>
+
+  <div class="field">
+    <%= form.label :options_volume %>
+    <%= form.number_field :options_volume %>
+  </div>
+
+  <div class="field">
+    <%= form.label :market_cap %>
+    <%= form.text_field :market_cap %>
+  </div>
+
+  <div class="field">
+    <%= form.label :volume %>
+    <%= form.text_field :volume %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avg_vol_3m %>
+    <%= form.text_field :avg_vol_3m %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eps_est_next_year %>
+    <%= form.text_field :eps_est_next_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :forward_pe %>
+    <%= form.text_field :forward_pe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_to_book %>
+    <%= form.text_field :price_to_book %>
+  </div>
+
+  <div class="field">
+    <%= form.label :div_payment_date %>
+    <%= form.date_select :div_payment_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ex_div_date %>
+    <%= form.date_select :ex_div_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :div_per_share %>
+    <%= form.text_field :div_per_share %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trailing_annual_div_rate %>
+    <%= form.text_field :trailing_annual_div_rate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trailing_annual_div_yield %>
+    <%= form.text_field :trailing_annual_div_yield %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

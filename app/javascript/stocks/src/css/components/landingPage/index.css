@@ -1,0 +1,32 @@
+.App--LandingPage .heading-segment {
+  min-height: 700px;
+  padding: 1em 0; }
+  .App--LandingPage .heading-segment.mobile {
+    min-height: 420px;
+    padding: 4em 0; }
+
+.App--LandingPage .segment-0 {
+  padding: 8em 0; }
+  .App--LandingPage .segment-0 .header {
+    font-size: 2em; }
+  .App--LandingPage .segment-0 .content {
+    font-size: 1.33em; }
+
+.App--LandingPage .segment-1 {
+  padding: 0; }
+  .App--LandingPage .segment-1 .row .column.grid-column {
+    padding: 5em; }
+    .App--LandingPage .segment-1 .row .column.grid-column .header {
+      font-size: 2em; }
+    .App--LandingPage .segment-1 .row .column.grid-column .content {
+      font-size: 1.33em; }
+
+.App--LandingPage .segment-2 {
+  padding: 8em 0; }
+  .App--LandingPage .segment-2 .custom-header {
+    font-size: 2em; }
+  .App--LandingPage .segment-2 .divider {
+    margin: 3em 0;
+    text-transform: uppercase; }
+  .App--LandingPage .segment-2 .content {
+    font-size: 1.33em; }

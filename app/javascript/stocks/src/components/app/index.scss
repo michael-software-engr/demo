@@ -1,0 +1,30 @@
+// For React Dates, https://github.com/airbnb/react-dates/blob/master/README.md
+body {
+  box-sizing: border-box;
+}
+
+$sign-up-button-class: '.sign-up-button';
+
+@mixin sign-up-button {
+  margin-left: 0.5em;
+}
+
+.App--DesktopContainer {
+  .menu-segment {
+    .ui.menu:not(.vertical) { // Semantic UI
+      #{$sign-up-button-class} {
+        @include sign-up-button;
+      }
+    }
+  }
+}
+
+.App--MobileContainer--SemanticUI {
+  .custom-menu {
+    .ui.button { // Semantic UI
+      &#{$sign-up-button-class} {
+        @include sign-up-button;
+      }
+    }
+  }
+}

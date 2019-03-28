@@ -1,0 +1,49 @@
+$background: #1B1C1D;
+$border-color: #797A7A;
+$color: #C2C2C2;
+$hover-color: #2D2E2F;
+
+.ui.menu .ui.dropdown .menu { // Semantic UI
+  &.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu {
+    background: $background;
+
+    border: 1px solid $border-color;
+
+    a {
+      span {
+        color: $color;
+        font-weight: 400;
+      }
+
+      $border-radius: 5px;
+
+      &.item { // Semantic UI
+        padding-left: 5px !important;
+
+        &:first-child:hover {
+          background: $hover-color !important;
+          border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+
+        &:last-child:hover {
+          background: $hover-color !important;
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+
+    // For the "pointer".
+    &:after {
+      background: $background;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+      left: -4px;
+    }
+
+    &.pointer-hover:after {
+      background: $hover-color;
+    }
+  }
+}

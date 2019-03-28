@@ -1,0 +1,30 @@
+.ui.header { // Semantic UI
+  &.App--HomepageHeading {
+    &.main-heading {
+      letter-spacing: 4px;
+      font-size: 4em;
+      font-weight: bold;
+      margin-top: 1.75em;
+      margin-bottom: 0;
+
+      &.mobile {
+        letter-spacing: 2px;
+        font-size: 2.25em;
+        margin-top: 2em;
+      }
+    }
+
+    &.sub-title {
+      font-size: 1.7em;
+      font-weight: normal;
+      margin-top: 0.25em;
+      margin-bottom: 1em;
+
+      &.mobile {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+        margin-bottom: 0.75em;
+      }
+    }
+  }
+}

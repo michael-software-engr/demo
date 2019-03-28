@@ -1,0 +1,50 @@
+
+.ui.button.App--Stocks--StocksTable--Filter--SetFilter {
+  width: 5.25rem;
+
+  &.Basic {
+    font-weight: bolder;
+  }
+}
+
+.App--Stocks--StocksTable--Filter {
+  @mixin common {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 44%;
+
+    .ui.form .inline.fields { // Semantic UI
+      .field:not(.wide) { // Semantic UI
+        &.OperandInput {
+          .ui.input { // Semantic UI
+            width: 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.ExpectedMove {
+    @include common;
+    left: 39%;
+  }
+
+  &.PreviousMove {
+    @include common;
+    left: 47%;
+  }
+
+  &.MarketCap {
+    @include common;
+    left: 58%;
+  }
+
+  &.CompanyName {
+    padding: 0 10%;
+  }
+
+  &.SymbolFilter {
+    padding: 0 10%;
+  }
+}

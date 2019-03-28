@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @stock.user %>
+</p>
+
+<p>
+  <strong>Trading day:</strong>
+  <%= @stock.trading_day %>
+</p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @stock.symbol %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @stock.company_name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @stock.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @stock.time %>
+</p>
+
+<p>
+  <strong>Conference call:</strong>
+  <%= @stock.conference_call %>
+</p>
+
+<p>
+  <strong>Previous move:</strong>
+  <%= @stock.previous_move %>
+</p>
+
+<p>
+  <strong>Expected move:</strong>
+  <%= @stock.expected_move %>
+</p>
+
+<p>
+  <strong>Options volume:</strong>
+  <%= @stock.options_volume %>
+</p>
+
+<p>
+  <strong>Market cap:</strong>
+  <%= @stock.market_cap %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @stock.volume %>
+</p>
+
+<p>
+  <strong>Avg vol 3m:</strong>
+  <%= @stock.avg_vol_3m %>
+</p>
+
+<p>
+  <strong>Eps est next year:</strong>
+  <%= @stock.eps_est_next_year %>
+</p>
+
+<p>
+  <strong>Forward pe:</strong>
+  <%= @stock.forward_pe %>
+</p>
+
+<p>
+  <strong>Price to book:</strong>
+  <%= @stock.price_to_book %>
+</p>
+
+<p>
+  <strong>Div payment date:</strong>
+  <%= @stock.div_payment_date %>
+</p>
+
+<p>
+  <strong>Ex div date:</strong>
+  <%= @stock.ex_div_date %>
+</p>
+
+<p>
+  <strong>Div per share:</strong>
+  <%= @stock.div_per_share %>
+</p>
+
+<p>
+  <strong>Trailing annual div rate:</strong>
+  <%= @stock.trailing_annual_div_rate %>
+</p>
+
+<p>
+  <strong>Trailing annual div yield:</strong>
+  <%= @stock.trailing_annual_div_yield %>
+</p>
+
+<%= link_to 'Edit', edit_stock_path(@stock) %> |
+<%= link_to 'Back', stocks_path %>

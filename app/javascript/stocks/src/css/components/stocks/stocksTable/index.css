@@ -1,0 +1,16 @@
+.ui.table.App--Stocks--StocksTable thead th.TableHeader {
+  font-size: 0.8rem;
+  padding: 4px; }
+  .ui.table.App--Stocks--StocksTable thead th.TableHeader.DefaultCursor {
+    cursor: default; }
+
+.App--Stocks--StocksTable--Content.Text {
+  white-space: nowrap; }
+
+.App--Stocks--StocksTable--Content.Anchor {
+  font-weight: bolder;
+  color: #4285F4;
+  letter-spacing: 2px; }
+  .App--Stocks--StocksTable--Content.Anchor:hover {
+    text-decoration: underline;
+    color: #4285F4; }

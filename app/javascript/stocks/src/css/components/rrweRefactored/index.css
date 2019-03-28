@@ -1,0 +1,11 @@
+.App--RrweRefactored {
+  padding: 2em 0 1em 0; }
+  .App--RrweRefactored .error-message {
+    background-color: #e99;
+    padding: 10px; }
+
+.App--RrweRefactored--Presenters--List .load-more-button {
+  font-size: 150%; }
+
+.ui.segment.App--RrweRefactored--UserPage {
+  padding: 0 2rem 2rem; }

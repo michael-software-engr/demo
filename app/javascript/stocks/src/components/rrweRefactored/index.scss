@@ -1,0 +1,20 @@
+.App--RrweRefactored {
+  padding: 2em 0 1em 0;
+
+  .error-message {
+    background-color: #e99;
+    padding: 10px;
+  }
+}
+
+.App--RrweRefactored--Presenters--List {
+  .load-more-button {
+    font-size: 150%;
+  }
+}
+
+.ui.segment { // Semantic UI
+  &.App--RrweRefactored--UserPage {
+    padding: 0 2rem 2rem;
+  }
+}

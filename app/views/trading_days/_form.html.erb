@@ -1,0 +1,72 @@
+<%= form_with(model: trading_day, local: true) do |form| %>
+  <% if trading_day.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trading_day.errors.count, "error") %> prohibited this trading_day from being saved:</h2>
+
+      <ul>
+      <% trading_day.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :month %>
+    <%= form.number_field :month %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day %>
+    <%= form.number_field :day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dow %>
+    <%= form.text_field :dow %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nasdaq %>
+    <%= form.text_field :nasdaq %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spy %>
+    <%= form.text_field :spy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dow_change %>
+    <%= form.text_field :dow_change %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nasdaq_change %>
+    <%= form.text_field :nasdaq_change %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spy_change %>
+    <%= form.text_field :spy_change %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other %>
+    <%= form.text_area :other %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

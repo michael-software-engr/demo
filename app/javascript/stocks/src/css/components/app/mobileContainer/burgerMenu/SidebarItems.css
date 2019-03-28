@@ -1,0 +1,23 @@
+.ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu {
+  background: #1B1C1D;
+  border: 1px solid #797A7A; }
+  .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu a span {
+    color: #C2C2C2;
+    font-weight: 400; }
+  .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu a.item {
+    padding-left: 5px !important; }
+    .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu a.item:first-child:hover {
+      background: #2D2E2F !important;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu a.item:last-child:hover {
+      background: #2D2E2F !important;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+  .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu:after {
+    background: #1B1C1D;
+    border-top: 1px solid #797A7A;
+    border-left: 1px solid #797A7A;
+    left: -4px; }
+  .ui.menu .ui.dropdown .menu.App--MobileContainer--BurgerMenu--SidebarItems--DropdownMenu.pointer-hover:after {
+    background: #2D2E2F; }

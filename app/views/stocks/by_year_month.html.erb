@@ -1,0 +1,7 @@
+<h1>DEBUG: bullet, uniform notifier, count: <%= @stocks.count %></h1>
+
+<ul>
+  <% @stocks.each do |stock| %>
+    <li><%= [stock.symbol, stock.trading_day.date].join(' ') %></li>
+  <% end %>
+</ul>

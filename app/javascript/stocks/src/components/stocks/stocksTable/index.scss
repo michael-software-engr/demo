@@ -1,0 +1,32 @@
+.ui.table { // Semantic UI
+  &.App--Stocks--StocksTable {
+    thead th { // Semantic UI
+      &.TableHeader {
+        font-size: 0.8rem;
+        padding: 4px;
+
+        &.DefaultCursor {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+.App--Stocks--StocksTable--Content {
+  &.Text {
+    white-space: nowrap;
+  }
+
+  &.Anchor {
+    $blue: #4285F4;
+    font-weight: bolder;
+    color: $blue;
+    letter-spacing: 2px;
+
+    &:hover {
+      text-decoration: underline;
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.App--LandingPage {
+  .heading-segment {
+    min-height: 700px;
+    padding: 1em 0;
+
+    &.mobile {
+      min-height: 420px;
+      padding: 4em 0;
+    }
+  }
+
+  .segment-0 {
+    padding: 8em 0;
+    .header {
+      font-size: 2em;
+    }
+
+    .content {
+      font-size: 1.33em;
+    }
+  }
+
+  .segment-1 {
+    padding: 0;
+
+    .row .column { // Semantic UI
+      &.grid-column {
+        padding: 5em;
+        .header {
+          font-size: 2em;
+        }
+
+        .content {
+          font-size: 1.33em;
+        }
+      }
+    }
+  }
+
+  .segment-2 {
+    padding: 8em 0;
+    .custom-header {
+      font-size: 2em;
+    }
+
+    .divider {
+      margin: 3em 0;
+      text-transform: uppercase;
+    }
+
+    .content {
+      font-size: 1.33em;
+    }
+  }
+}

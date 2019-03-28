@@ -1,0 +1,37 @@
+.ui.button.App--Stocks--StocksTable--Filter--SetFilter {
+  width: 5.25rem; }
+  .ui.button.App--Stocks--StocksTable--Filter--SetFilter.Basic {
+    font-weight: bolder; }
+
+.App--Stocks--StocksTable--Filter.ExpectedMove {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 44%;
+  left: 39%; }
+  .App--Stocks--StocksTable--Filter.ExpectedMove .ui.form .inline.fields .field:not(.wide).OperandInput .ui.input {
+    width: 6rem; }
+
+.App--Stocks--StocksTable--Filter.PreviousMove {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 44%;
+  left: 47%; }
+  .App--Stocks--StocksTable--Filter.PreviousMove .ui.form .inline.fields .field:not(.wide).OperandInput .ui.input {
+    width: 6rem; }
+
+.App--Stocks--StocksTable--Filter.MarketCap {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 44%;
+  left: 58%; }
+  .App--Stocks--StocksTable--Filter.MarketCap .ui.form .inline.fields .field:not(.wide).OperandInput .ui.input {
+    width: 6rem; }
+
+.App--Stocks--StocksTable--Filter.CompanyName {
+  padding: 0 10%; }
+
+.App--Stocks--StocksTable--Filter.SymbolFilter {
+  padding: 0 10%; }

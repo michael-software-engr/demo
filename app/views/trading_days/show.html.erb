@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @trading_day.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @trading_day.month %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @trading_day.day %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @trading_day.date %>
+</p>
+
+<p>
+  <strong>Dow:</strong>
+  <%= @trading_day.dow %>
+</p>
+
+<p>
+  <strong>Nasdaq:</strong>
+  <%= @trading_day.nasdaq %>
+</p>
+
+<p>
+  <strong>Spy:</strong>
+  <%= @trading_day.spy %>
+</p>
+
+<p>
+  <strong>Dow change:</strong>
+  <%= @trading_day.dow_change %>
+</p>
+
+<p>
+  <strong>Nasdaq change:</strong>
+  <%= @trading_day.nasdaq_change %>
+</p>
+
+<p>
+  <strong>Spy change:</strong>
+  <%= @trading_day.spy_change %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @trading_day.other %>
+</p>
+
+<%= link_to 'Edit', edit_trading_day_path(@trading_day) %> |
+<%= link_to 'Back', trading_days_path %>
